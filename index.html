@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorteos Colorado</title>
+    <link rel="shortcut icon" href="img/iconoblanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloindex.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+
+<div class="barra-inicial">
+<a href="index.html"> <img src="img/sorteos2.png"> </a>
+
+</div>
+
+<body>
+    <header>
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="#boletos">Comprar Boletos</a>
+            <a href="#">Métodos de Pago</a>
+            <a href="#">Proximos Eventos</a>
+            <a href="#preguntas">Preguntas Frecuentes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Sorteos Colorado</h1>
+            <h2>¡Con <span>Sorteos Colorado</span> la suerte estará siempre de tu lado!</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+
+       
+        <section  id="boletos" class="contenedor sobre-nosotros">
+            <h2 class="titulo">Compra tus boletos</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/anucio.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3>Precios:</h3>
+                    <p>(Seleccione una opción si desea números aleatorios)</p>
+                    <li onclick="aleatorio(1)">1 Boleto = $69</li>
+                    <li onclick="aleatorio(2)">2 Boleto = $138</li>
+                    <li onclick="aleatorio(3)">3 Boleto = $207</li>
+                    <li onclick="aleatorio(4)">4 Boleto = $276</li>
+                    <li onclick="aleatorio(5)">5 Boleto = $345</li>
+                    <li onclick="aleatorio(10)">10 Boleto = $690</li>
+                    <li onclick="aleatorio(20)">20 Boleto = $1,380</li>
+                    <li onclick="aleatorio(30)">30 Boleto = $2,070</li>
+                </div>
+            </div>
+            <br>
+            <br>
+
+<!------------------------------------------------------->
+                  <div id="miDiv"></div>
+                <br>
+                <div id="miDivSeleccionados"></div>
+                <div id="divApartar">
+                    <button class="classApartar" id="btnApartar">Apartar</button>
+                </div>
+            <!-- </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div> -->
+
+
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Proximos Eventos</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/evento1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>15 de Julio</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/evento2.jpeg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>25 de Septiembre</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/evento3.jpeg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>10 de Octubre</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/evento4.jpeg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>24 de Diciembre</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+       
+        <section id="preguntas" class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Preguntas Frecuentes</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <br>
+                        <br>
+                        <br>
+                        <h3><span>1</span>¿CÓMO SE ELIGE A LOS GANADORES?</h3>
+                        <p>Todos nuestros sorteos se realizan en base a la Lotería Nacional para la Asistencia Pública mexicana.
+                        El ganador de Sorteos Colorado será el participante cuyo número de boleto coincida con las últimas cifras del primer premio ganador de la Lotería Nacional (las fechas serán publicadas en nuestra página oficial).</p>
+
+
+                    </div>
+                    <div class="servicio-ind">
+                       
+                        <h3><span>2</span>¿QUÉ SUCEDE CUANDO EL NÚMERO GANADOR ES UN BOLETO NO VENDIDO?</h3>
+                        <p>Se elige un nuevo ganador realizando la misma dinámica en otra fecha cercana (se anunciará la nueva fecha).</p>
+                    </div>
+                    <div class="servicio-ind">
+                        
+                        <h3><span>3</span>¿DÓNDE SE PUBLICA A LOS GANADORES?</h3>
+                        <p>En nuestra página oficial de Facebook "Sorteos Colorado" puedes encontrar todos y cada uno de nuestros sorteos anteriores, así como las transmisiones en vivo con Lotería Nacional y las entregas de premios a los ganadores!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="contacto" class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Número Telefónico:</h4>
+                <p>+1 (720) 7572-312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Gmail</h4>
+                <p>infosorteoscolorado@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>¡Con Sorteos Colorado la suerte <br> estará siempre de tu lado!</h4>
+
+                
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Derechos Reservados | Sorteos Colorado 2023</h2>
+    </footer>
+    <script src="./js/funciones.js"></script>
+
+
+
+    <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="celular">Celular:</label>
+      <input type="tel" id="celular" name="celular" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado">
+        <option value="">Selecciona un estado</option>
+        <option value="Aguascalientes">Aguascalientes</option>
+        <option value="Baja California">Baja California</option>
+        <option value="Baja California Sur">Baja California Sur</option>
+        <option value="Campeche">Campeche</option>
+        <option value="Chiapas">Chiapas</option>
+        <option value="Chihuahua">Chihuahua</option>
+        <option value="Coahuila">Coahuila</option>
+        <option value="Colima">Colima</option>
+        <option value="Durango">Durango</option>
+        <option value="Estado de México">Estado de México</option>
+        <option value="Guanajuato">Guanajuato</option>
+        <option value="Guerrero">Guerrero</option>
+        <option value="Hidalgo">Hidalgo</option>
+        <option value="Jalisco">Jalisco</option>
+        <option value="Michoacán">Michoacán</option>
+        <option value="Morelos">Morelos</option>
+        <option value="Nayarit">Nayarit</option>
+        <option value="Nuevo León">Nuevo León</option>
+        <option value="Oaxaca">Oaxaca</option>
+        <option value="Puebla">Puebla</option>
+        <option value="Querétaro">Querétaro</option>
+        <option value="Quintana Roo">Quintana Roo</option>
+        <option value="San Luis Potosí">San Luis Potosí</option>
+        <option value="Sinaloa">Sinaloa</option>
+        <option value="Sonora">Sonora</option>
+        <option value="Tabasco">Tabasco</option>
+        <option value="Tamaulipas">Tamaulipas</option>
+        <option value="Tlaxcala">Tlaxcala</option>
+        <option value="Veracruz">Veracruz</option>
+        <option value="Yucatán">Yucatán</option>
+        <option value="Zacatecas">Zacatecas</option>
+      </select>
+
+      <input type="submit" value="Enviar" id="Enviar">
+    </form>
+  </div>
+</div>
+
+
+</body>
+
+</html>

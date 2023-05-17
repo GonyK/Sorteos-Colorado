@@ -1,0 +1,794 @@
+*{
+	box-sizing: border-box;
+
+}
+
+body
+{
+	font-family: "Oswald";
+	font-size: 22px;
+	background-color: black;
+
+}
+
+html, body 
+{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    background-color: white;
+}
+
+a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+p
+{
+	color:white;
+}
+
+main
+{
+background-color: white;
+
+
+}
+
+li
+{
+	color: white;
+}
+
+h1
+{
+	color: white;
+}
+
+h3
+{
+color: #fff001;
+}
+
+h2
+{
+font-size: 20px;
+color: green;
+}
+
+.informacion-llamar 
+{
+	text-align: center;
+	padding-bottom: 25px;
+
+}
+/*-------------------------------------------------------------------------------*/
+
+.informacion-llamar p
+{
+	font-size: 25px;
+	color: black;
+	font-family: "Oswald";
+}
+
+/*Este apartado de .boton-descarga se encarga del boton debajo del h1 de .informacion-llamar.Este le da las caraceristicas de boton*/
+.boton-descarga
+{
+	color:white;
+	background-color: black;
+	font-size: 20px;
+	border-radius: 40px;
+	padding: 15px 20px;
+	transition: 0.2s ease-out;
+}
+
+.boton-descarga:hover
+{
+	
+	background-color: red;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+
+.bloque-contenido-servicio input
+{
+	border-radius: 5px;
+	font-size: 20px;
+	width: 100%;
+}
+
+.botonestarjetas
+{
+	margin-top: 15px;
+	border-radius: 5px;
+	font-size: 22px;
+	padding: 5px;
+	margin:5px;
+	color: white;
+	background-color: black;
+	transition: 0.2s ease-out;
+	font-family: "Oswald"; 
+	width: 100%;
+}
+
+.botonestarjetas:hover
+{
+	color: white;
+	background-color: red;
+}
+
+header
+{
+	
+	padding: 15px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	background-color: black;
+}
+
+header .container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .container .logo
+{
+	width: 150px;
+	margin-bottom: -50px;
+	margin-top: -50px;
+}
+
+header .container nav a
+{
+	color: #fff001;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+/* Este hover es para darle animacion 
+ a los apartados de inicio, nosotros, galeria, servicio
+ y contactenos, en lugar de rojos cuando haces contacto se ponen rojos */
+header .container nav a:hover
+{
+	
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+header .container .hamb
+{
+	display: none;
+	position: relative;
+}
+
+
+footer
+{
+	text-align: center;
+	border-radius: 10px;
+
+
+}
+
+footer .eslogan 
+{
+	color: white;
+}
+
+footer  h3
+{
+	color: #fff001;
+}
+
+
+footer.seccion 
+{
+	background-color: black;
+	color: white;
+	padding-bottom: 0;
+
+}
+
+
+footer .barra-footer
+{
+
+	background-color: grey;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Este hover se encarga de cambiar de color la 
+barra de derechos reservados que esta ubicada hasta el ultimo de la pagina,
+de ser gris, pasa a ser blanca con letras rojas al tener contacto con la barra.*/
+footer .barra-footer:hover
+{
+	
+	color: black;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+footer .logo-footer
+{
+	width: 100%;
+}
+
+footer ul
+{
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+	
+
+}
+
+footer ul li
+{
+	margin-bottom: 10px;
+
+}
+
+
+
+footer p
+{
+	color: white;
+	margin-bottom: 30px;
+}
+
+footer a
+{
+	color: white;
+}
+
+footer .redes
+{
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+footer .redes a
+{
+	margin: 0 7.5px;
+}
+
+.boton
+{
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+	border: none;
+}
+
+
+
+.boton.boton-negro
+{
+	color: white;
+	background-color: black;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+.boton.boton-negro:hover
+{
+	color: black;
+	background-color: white;
+	
+	
+}
+
+
+
+.seccion
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+}
+
+
+.cuadrado-perfecto
+{
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+
+
+}
+
+.cuadrado-perfecto img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	
+}
+
+
+
+.container
+{
+  width: 1140px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+
+}
+
+.container-fluid
+{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+}
+
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.columna
+{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.columna-25
+{
+	width: 25%;
+}
+
+.columna-33
+{
+	width: 33.33%;
+}
+
+.columna-41
+{
+	width: 41.66%;
+}
+
+
+.columna-50
+{
+	width: 50%;
+}
+
+
+.empujar-50
+{
+	margin-left: 50%;
+}
+
+.empujar-0
+{
+	margin-left: 0;
+}
+
+#inicio
+{
+	position: relative;
+}
+
+
+
+#inicio h1
+{
+
+	color:white;
+	background-color: black;
+	border-radius: 10px 0px;
+	padding: 15px 20px;
+	
+
+}
+
+#inicio img
+{
+	width: 100%;
+	display: block;
+}
+
+#inicio .bloque-inicio
+{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 400px;
+	text-align: center;
+	margin-left: -200px;
+}
+
+#inicio .bloque-inicio h1
+{
+	color: white;
+	font-size: 35px;
+}
+
+#inicio .bloque-inicio p
+{
+	color: white;
+	
+}
+
+
+
+#menu h1
+{
+	color: #fff001 ;
+}
+
+#menu .bloque-servicio 
+{
+	border: 2px solid black;
+	margin-bottom: 15px;
+	/*Este apartado le da la curvatura al borde de las imagenes del menu*/
+	border-radius: 15px 20px;
+}
+
+#menu .bloque-servicio .bloque-img-servicio
+{
+
+}
+
+#menu .bloque-servicio .bloque-img-servicio img
+{
+	width: 100%;
+	/*Este apartado le da la curvatura a las imagenes del menu*/
+	border-radius: 15px 20px;
+
+
+}
+
+
+
+
+#menu .bloque-servicio .bloque-img-servicio.cuadrado-perfecto
+{
+	padding-bottom: 56.25%;
+}
+
+#menu .bloque-servicio .bloque-contenido-servicio
+{
+	padding: 15px;
+}
+
+
+#menu .bloque-servicio .bloque-contenido-servicio h3
+{
+	margin-top: 0;
+	font-size: 25px;
+	transition: 0.2s ease-out;
+	color: black;
+	margin-bottom: 5px;
+	
+}
+
+
+
+
+
+
+
+
+#contactenos 
+{
+	position: relative;
+}
+
+#contactenos iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* Coloque el mapa de color para que se vea mejor la pagina, esta siguiente funcion es para hacer blanco y negro el mapa 
+	o cualquier elemento:  filter: grayscale(1);*/
+}
+
+#contactenos form
+{
+	padding: 30px;
+	background-color: green;
+	border-radius: 15px;
+	
+	
+}
+
+#contactenos form .form-block
+{
+	
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#contactenos form .form-block .form-control
+{
+	
+	display: block;
+	height: 40px;
+	font-size: 16px;
+	border: 1px solid grey;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+#contactenos form .form-block textarea
+{
+	display: block;
+	height: 100px;
+	font-size: 16px;
+	border: 1px solid grey;
+	width: 100%;
+	padding: 5px 10px;
+	/*Le agregue el resize para que no se pudiera cambiar de dimensiones la textarea
+	en ejecucion y se quedara su tamaño fijo.*/
+	resize: none;
+
+}
+
+#whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-image: url(img/iconowhatsapp.svg);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px 50px 50px 0px;
+    text-align: center;
+    z-index: 9999 !important;
+
+}
+
+#contactenos form .form-block.bloque-ultimo
+{
+	margin-bottom: 0;
+
+}
+
+.entrada
+{
+	text-align: center;
+}
+
+
+
+.sushis-naturales
+{
+	text-align: center;
+}
+
+
+.sushis-empanizados
+{
+	text-align: center;
+}
+
+.sushis-horneados
+{
+	text-align: center;
+}
+
+
+
+#bebidas
+{
+	text-align: center;
+}
+
+#bebidas h3
+{
+	color: white;
+}
+
+.seccion2
+{
+	text-align: center;
+
+	
+}
+
+.seccion2 h1
+{
+	color: black;
+	
+}
+
+.toping
+{
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.toping h3
+{
+	color: white;
+}
+
+.peques
+{
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.peques h3
+{
+	color: white;
+}
+
+@media(max-width: 767px)
+{
+
+	body
+	{
+		font-size: 15px;
+	}
+	
+	header .container nav
+	{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-right: 15px;
+		padding-left: 15px;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.4s ease;
+		transform: translateX(100%);
+	}
+
+	header .container nav.open
+	{
+		transform: translateX(0);
+	}
+
+	header .container nav
+	{
+		font-size: 30px;
+		margin: 15px 0;
+	}
+
+	header .container .hamb
+	{
+		display: block;
+		font-size: 40px;
+		color: #fff001;
+
+	}
+
+	form .boton.boton-negro
+	{
+	width: 100%;
+	}
+
+
+	footer
+	{
+		text-align: center;
+	}
+
+	footer .logo-footer
+	{
+		width: 50%;
+	}
+
+	footer .redes
+	{
+		justify-content: center;
+	}
+
+
+	.container
+	{
+		width: 100%;
+	}
+
+	.columna-mobile-100
+	{
+		width: 100%;
+	}
+
+	.columna-mobile-50
+	{
+		width: 50%;
+
+	}
+
+	
+	.empujar-mobile-0
+	{
+		margin-left: 0;
+	}
+
+	.sinpadding-mobile
+	{
+		padding: 0;
+	}
+
+	#inicio
+	{
+		height: 100vh;
+	}
+
+	#inicio img
+	{
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	#menu .bloque-servicio
+	{
+		margin-bottom: 15px;
+	}
+
+	
+	
+
+	#contactenos
+	{
+		padding: 0;
+	}
+
+	#contactenos form
+	{
+		padding: 0;
+		padding: 30px;
+	background-color: green;
+	border-radius: 0px;
+	
+	}
+
+
+	#contactenos iframe
+	{
+		position: relative;
+		height: 50vh;
+	}
+
+	#menu .bloque-servicio .bloque-contenido-servicio h3
+	{
+	margin-top: 0;
+	font-size: 20px;
+	transition: 0.2s ease-out;
+	
+	}
+
+}
